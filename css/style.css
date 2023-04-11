@@ -1,8 +1,16 @@
+/* global */
+@font-face {
+    font-family: 'digital-7';
+    src: url('../fonts/digital_7.ttf') format('truetype');
+         font-style: normal;
+         font-weight: normal;
+ }
+
 body{
 	width: 100%;
 	margin: 10px auto;
-    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 20px;
+    font-family: 'Roboto Mono', monospace;
+    word-spacing: 8px;
 
 }
 
@@ -20,14 +28,50 @@ body{
     max-height: 100%;
 }
 
-header HR {
-    border-bottom: 0.005em dotted rgb(172, 172, 172);
-    width: 250px;
+header span {
+    width: 225px;
     float: left;
+    border-bottom: 0.001em dotted rgb(172, 172, 172);
+
 }
 header P{
-    font-size: 12px;
-    text-transform: uppercase;
+        font-size: 13px;
+        text-transform: uppercase;
+}
+
+/*
+* Зафиксировать меню
+* - - - - - - - - -
+*/
+
+.navbar {
+    overflow: hidden;
+    background-color: #000000;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+.navbar UL {
+    margin: 0 auto;
+    margin-left: 48px;
+    list-style: none;
+    padding: 0;
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background: #ddd;
+    color: black;
 }
 
 .title{
@@ -39,8 +83,247 @@ header P{
 .title H1{
     font-weight: 200;
     font-size: 35px;
-    padding: 8px;
+    padding: 6px;
+    word-spacing: 10px;
+    text-shadow: 2px 2px rgb(172, 172, 172);
 }
 .title P{
     font-weight: 200;
+    font-size: 20px;
+}
+
+h3 {
+    text-align: left;
+    font-family: 'Digital-7';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+    color: #2B6266;
+    text-shadow: 2px 3px 3px rgb(0 0 0 / 30%);
+    margin: 0;
+    padding: 0;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    -webkit-transform: scaleY(0.9);
+    -ms-transform: scaleY(0.9);
+    transform: scaleY(0.9);
+ }
+
+
+
+/*
+* quote
+* - - - - - - - - -
+*/
+
+.quote-of-day{
+    text-align: right;
+    font-size: 45px;
+    padding: 6px;
+    word-spacing: 10px;
+    font-weight: bolder;
+    background: rgb(172,172,172);
+    background: linear-gradient(90deg, rgba(172,172,172,1) 0%, rgba(227,227,227,1) 50%, rgba(172,172,172,1) 100%);
+    line-height:68px;
+    border-radius: 3px;
+    opacity: 70%;
+
+    /* border-bottom: 0.005em dotted rgb(172, 172, 172); */
+
+}
+.quote-of-day SPAN{
+    font-size: 85px;
+    padding: 10px;
+    word-spacing: 10px;
+    text-shadow: 2px 2px rgb(172, 172, 172);
+    opacity: 40%;
+}
+
+
+
+/*
+* skills
+* - - - - - - - - -
+*/
+
+
+.skills{
+    margin: 40px auto;
+    text-transform: uppercase;
+    border-bottom: 0.005em dotted rgb(172, 172, 172);
+    height: 500px;
+}
+
+.skills P{
+    font-size: 20px;
+}
+
+.skills-edu {
+    width: 100%;
+    margin: 0px;
+    border-bottom: 0.005em dotted rgb(172, 172, 172);
+
+}
+.skills-edu P{
+    font-size: 14px;
+    line-height: 6px;
+}
+.skills-edu P span{
+    font-weight: bolder;
+}
+.skills-edu .courses-span {
+    font-weight: 200;
+    padding-left: 114px;
+}
+
+.skills-left {
+    margin: 20px 0 0 0;
+    width: 400px;
+    float: left;
+    border: 1px solid red;
+}
+.skills-right {
+    width: 400px;
+    margin: 20px 0 0 0;
+    float: right;
+    border: 1px solid red;
+
+}
+
+/*
+* projects
+* - - - - - - - - -
+*/
+
+
+.projects{
+    margin: 40px auto;
+    text-transform: uppercase;
+    border-bottom: 0.005em dotted rgb(172, 172, 172);
+    height: 500px;
+}
+
+.projects P{
+    font-weight: 200;
+    font-size: 20px;
+}
+.projects-left {
+    margin: 20px 0 0 0;
+    float: left;
+    border: 1px solid red;
+}
+.projects-right {
+    margin: 20px 0 0 0;
+    float: right;
+    border: 1px solid red;
+
+}
+
+
+
+/*
+* contacts
+* - - - - - - - - -
+*/
+
+
+.contacts{
+    margin: 40px auto;
+    text-transform: uppercase;
+    /* border-bottom: 0.005em dotted rgb(172, 172, 172); */
+    height: 500px;
+}
+
+.contacts P{
+    font-weight: 200;
+    font-size: 20px;
+}
+.contacts-left {
+    margin: 20px 0 0 0;
+    float: left;
+    /* border: 1px solid red; */
+}
+.contacts-right {
+    margin: 20px 0 0 0;
+    float: right;
+    /* border: 1px solid red; */
+
+}
+
+
+
+
+/*
+* clear
+* - - - - - - - - -
+*/
+.clear {
+    width: 100%;
+    height: 40px;
+}
+
+/*
+* Footer
+* - - - - - - - - -
+*/
+.container-footer {
+    margin: 10px auto;
+    background: #333;
+    width: 100%;
+    display: block;
+    min-height: 400px;
+
+}
+.footer {
+    height: 300px;
+}
+.footer P {
+    text-transform: uppercase;
+    color: #ddd;
+
+}
+
+.footer-center {
+    width: 100%;
+    height: 110px;
+    border-bottom: 1px dotted #ddd;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.footer-center IMG {
+    margin: 20px;
+    width: 60px;
+    border-radius: 3px;
+    opacity: 0.7;
+    filter: alpha(opacity=70); /*для IE8 и более ранних версий*/
+}
+.footer-center IMG a:hover {
+    opacity: 1.0;
+    filter: alpha(opacity=100); /*для IE8 и более ранних версий*/
+
+}
+.footer-left{
+    /* border: 1px solid #ddd; */
+    float: left;
+    margin: 10px 0;
+    padding: 30px;
+
+}
+.footer-right {
+    /* border: 1px solid #ddd; */
+    margin: 10px 0;
+    float: right;
+}
+
+.footer INPUT {
+    padding: 10px;
+    border-radius: 3px;
+}
+.footer button  {
+    padding: 10px 20px;
+    border-radius: 3px;
+    margin-left: 16px;
 }
