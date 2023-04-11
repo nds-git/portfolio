@@ -220,24 +220,34 @@ h3 {
     margin: 40px auto;
     text-transform: uppercase;
     border-bottom: 0.005em dotted rgb(172, 172, 172);
-    height: 500px;
+    height: 450px;
 }
 
 .projects P{
     font-weight: 200;
     font-size: 20px;
+    text-align: center;
 }
 .projects-left {
-    margin: 20px 0 0 0;
+    margin: 60px 20px 20px 20px;
     float: left;
-    border: 1px solid red;
+    height: 280px;
+    width: 200px;
 }
-.projects-right {
+.projects-left IMG {
+    width: 200px;
+}
+.projects-left:first-child {
+    margin-left: 0;
+}
+
+
+/* .projects-right {
     margin: 20px 0 0 0;
     float: right;
     border: 1px solid red;
 
-}
+} */
 
 
 
