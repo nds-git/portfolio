@@ -236,6 +236,8 @@ h3 {
 }
 .projects-left IMG {
     width: 200px;
+    border-radius: 3px;
+
 }
 .projects-left:first-child {
     margin-left: 0;
