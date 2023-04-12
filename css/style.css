@@ -169,6 +169,7 @@ h3 {
 .skills-edu P{
     font-size: 14px;
     line-height: 6px;
+    padding: 0 0 0 20px;
 }
 .skills-edu P span{
     font-weight: bolder;
